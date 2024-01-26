@@ -12,6 +12,8 @@ import java.util.List;
 public interface BulkPassModelMapper {
     BulkPassModelMapper INSTANCE = Mappers.getMapper(BulkPassModelMapper.class);
 
+    BulkPass map(BulkPassEntity value);
+
     List<BulkPass> map(List<BulkPassEntity> passEntities);
 
     BulkPassEntity map(BulkPassRequest bulkPassRequest);
